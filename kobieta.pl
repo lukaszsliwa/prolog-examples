@@ -1,0 +1,11 @@
+kobieta(ala).
+kobieta(ola).
+kobieta(magda).
+kobieta(wanda).
+kobieta(kunegunda).
+kobieta(zuzanna).
+kobieta(magda).
+kobieta(aneta).
+kobieta(ola).
+kobieta(ewa).
+kobieta(nina).

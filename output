@@ -1,0 +1,132 @@
+Lukasz Sliwa
+lukasz.sliwa@gmail.com
+
+
+
+?- ['corka.pl','dziadek.pl','dziecko.pl','kobieta.pl','mezczyzna.pl','potomek.pl','syn.pl','wnuk.pl'].
+% corka.pl compiled 0.00 sec, 1,280 bytes
+% dziadek.pl compiled 0.00 sec, 1,320 bytes
+% dziecko.pl compiled 0.00 sec, 4,192 bytes
+% kobieta.pl compiled 0.00 sec, 1,680 bytes
+% mezczyzna.pl compiled 0.00 sec, 1,624 bytes
+% potomek.pl compiled 0.00 sec, 1,808 bytes
+% syn.pl compiled 0.00 sec, 856 bytes
+% wnuk.pl compiled 0.00 sec, 720 bytes
+true.
+
+?- mezczyzna(karol).
+true.
+
+?- kobieta(zuzanna).
+true.
+
+?- cziecko(onufry, X).
+Correct to: "dziecko(onufry,X)"? 
+Please answer 'y' or 'n'? yes
+X = magda ;
+X = mariusz.
+
+?- cziecko(onufry,X).
+Correct to: "dziecko(onufry,X)"? yes
+X = magda ;
+X = mariusz.
+
+?- corka(X,jacek).
+X = ola ;
+X = ola ;
+X = magda ;
+X = magda ;
+false.
+
+?- corka(W,jacek).
+W = ola ;
+W = ola ;
+W = magda ;
+W = magda ;
+false.
+
+?- wnuk(X,Y).
+X = onufry,
+Y = ala ;
+X = onufry,
+Y = jacek ;
+X = aneta,
+Y = ala ;
+X = aneta,
+Y = jacek ;
+X = ewa,
+Y = magda ;
+X = ewa,
+Y = mariusz ;
+X = nina,
+Y = magda ;
+X = nina,
+Y = mariusz ;
+X = ewa,
+Y = ala ;
+X = ewa,
+Y = jacek ;
+X = nina,
+Y = ala ;
+X = nina,
+Y = jacek.
+
+?- potomek(D,magda).
+D = onufry ;
+D = aneta ;
+D = ewa ;
+D = nina ;
+false.
+
+?- mezczyzna(karol).
+true.
+
+?- kobieta(zuzanna).
+true.
+
+?- dziecko(onufry,K).
+K = magda ;
+K = mariusz.
+
+?- corka(C,jacek).
+C = ola ;
+C = ola ;
+C = magda ;
+C = magda ;
+false.
+
+?- wnuk(W,D).
+W = onufry,
+D = ala ;
+W = onufry,
+D = jacek ;
+W = aneta,
+D = ala ;
+W = aneta,
+D = jacek ;
+W = ewa,
+D = magda ;
+W = ewa,
+D = mariusz ;
+W = nina,
+D = magda ;
+W = nina,
+D = mariusz ;
+W = ewa,
+D = ala ;
+W = ewa,
+D = jacek ;
+W = nina,
+D = ala ;
+W = nina,
+D = jacek.
+
+?- potomek(P,magda).
+P = onufry ;
+P = aneta ;
+P = ewa ;
+P = nina ;
+false.
+
+?- 
+
